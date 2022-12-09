@@ -1,0 +1,13 @@
+service: "service:news_sorting_service"
+labels:
+  owner: Jobin
+  stage: dev
+include:
+  - "*.py"
+python:
+  packages:
+    - torch
+    - pandas
+    - numpy
+    - tqdm
+    - transformers
